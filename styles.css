@@ -1,0 +1,13 @@
+body {
+    /* bg color */
+    height: 100vh;
+    background-color: #111111;
+
+    /* fonts */
+    font-family: Verdana, sans-serif;
+    color: white;
+}
+
+#hero {
+    font-size: 3.5em;
+}
