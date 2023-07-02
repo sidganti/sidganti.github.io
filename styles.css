@@ -7,20 +7,23 @@ body {
     color: white;
 }
 
-#navbar ul {
-    list-style-type: none;
-}
-
-#navbar li {
-    float: right;
-
-    padding: 1em;
-}
-
-#navbar a {
+.link {
     color: inherit;
     text-decoration: none;
 }
+
+/* navbar */
+
+#nav ul {
+    list-style-type: none;
+}
+
+#nav li {
+    float: right;
+    padding: 1em;
+}
+
+/* hero */
 
 #hero {
     /* fonts */
@@ -46,6 +49,30 @@ body {
 
     background-color: white;
     border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+/* footer */
+
+#footer {
+    /* postion */
+    position: fixed;
+    width: 100%;
+    bottom: 1em;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#footer small {
+    margin: 0.5em;
+}
+
+.icon {
+    vertical-align: middle;
     width: 1.5em;
     height: 1.5em;
 }
