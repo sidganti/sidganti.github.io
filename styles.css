@@ -1,6 +1,5 @@
 body {
     /* bg color */
-    height: 100vh;
     background-color: #111111;
 
     /* fonts */
@@ -8,6 +7,45 @@ body {
     color: white;
 }
 
+#navbar ul {
+    list-style-type: none;
+}
+
+#navbar li {
+    float: right;
+
+    padding: 1em;
+}
+
+#navbar a {
+    color: inherit;
+    text-decoration: none;
+}
+
 #hero {
+    /* fonts */
     font-size: 3.5em;
+
+    /* position */
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+}
+
+#hero p {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.button {
+    /* position */
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1em;
+
+    background-color: white;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
 }
