@@ -30,10 +30,10 @@ body {
     font-size: 3.5em;
 
     /* position */
-    margin: 0;
-    position: absolute;
-    top: 35%;
-    left: 35%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
 #hero p {
