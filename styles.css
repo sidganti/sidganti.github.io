@@ -7,9 +7,25 @@ body {
     color: white;
 }
 
+::selection {
+    background: springgreen;
+    color: #111111;
+}
+
 .link {
     color: inherit;
     text-decoration: none;
+}
+
+.button {
+    vertical-align: middle;
+
+    transition: all .5s ease;
+}
+
+.button:hover {
+    background: springgreen;
+    color: #111111;
 }
 
 /* navbar */
@@ -26,31 +42,48 @@ body {
 /* hero */
 
 #hero {
-    /* fonts */
-    font-size: 3.5em;
-
     /* position */
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
-}
-
-#hero p {
+    transform: translate(-50%, -50%);
     display: inline-block;
-    margin-right: 1em;
+
+    /* fonts */
+    font-size: 3.5em;
+
+    text-align: center;
 }
 
-.button {
+.feature {
     /* position */
     display: inline-block;
     vertical-align: middle;
-    margin-left: 1em;
 
-    background-color: white;
+    background-color: springgreen;
     border-radius: 50%;
     width: 1.5em;
     height: 1.5em;
+
+    cursor: pointer;
+
+    color: #111111;
+
+    /* hover animation */
+    transition: transform 0.2s;
+}
+
+.feature::selection {
+    background: springgreen;
+    color: #111111;
+}
+
+.feature:hover {
+    transform: scale(1.5);
+}
+
+.feature:active {
+    transform: scale(2);
 }
 
 /* footer */
