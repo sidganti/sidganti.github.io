@@ -20,7 +20,7 @@ body {
 .button {
     vertical-align: middle;
 
-    transition: all .5s ease;
+    /* transition: all .5s linear; */
 }
 
 .button:hover {
@@ -64,7 +64,19 @@ body {
     font-size: 1em;
 }
 
-.feature {
+#cursor {
+    color: springgreen;
+
+    animation: blink .8s linear infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* .feature {
     margin-left: 2em;
 
     background-color: springgreen;
@@ -76,7 +88,7 @@ body {
 
     color: #111111;
 
-    /* hover animation */
+    hover animation
     transition: transform 0.2s;
 }
 
@@ -86,7 +98,7 @@ body {
 
 .feature:active {
     transform: scale(2);
-}
+} */
 
 /* footer */
 
