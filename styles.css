@@ -47,23 +47,30 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: inline-block;
 
-    /* fonts */
-    font-size: 3.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
     text-align: center;
+    line-height: .5em;
+}
+
+#hero p {
+    font-size: 3.5em;
+}
+
+#hero small {
+    font-size: 1em;
 }
 
 .feature {
-    /* position */
-    display: inline-block;
-    vertical-align: middle;
+    margin-left: 2em;
 
     background-color: springgreen;
     border-radius: 50%;
-    width: 1.5em;
-    height: 1.5em;
+    width: 7.5em;
+    height: 7.5em;
 
     cursor: pointer;
 
@@ -71,11 +78,6 @@ body {
 
     /* hover animation */
     transition: transform 0.2s;
-}
-
-.feature::selection {
-    background: springgreen;
-    color: #111111;
 }
 
 .feature:hover {
