@@ -11,12 +11,14 @@ $(document).ready(() => {
             $('#heading').append(text.charAt(i));
 
             i++;
-            setTimeout(typewriter, 250);
+            setTimeout(typewriter, 150);
         }
         else {
             // show elements
             $('body > :not(#hero)').slideDown('slow');
             $('#hero small').slideDown('slow');
+
+            $('#cursor').addClass('blink');
         }
     }
     typewriter();

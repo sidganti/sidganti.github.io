@@ -1,15 +1,21 @@
+:root {
+    --primary: #111111;
+    --secondary: white;
+    --tertiary: springgreen;
+}
+
 body {
     /* bg color */
-    background-color: #111111;
+    background-color: var(--primary);
 
     /* fonts */
     font-family: Verdana, sans-serif;
-    color: white;
+    color: var(--secondary);
 }
 
 ::selection {
-    background: springgreen;
-    color: #111111;
+    background: var(--tertiary);
+    color: var(--primary);
 }
 
 .link {
@@ -19,13 +25,11 @@ body {
 
 .button {
     vertical-align: middle;
-
-    /* transition: all .5s linear; */
 }
 
 .button:hover {
-    background: springgreen;
-    color: #111111;
+    background: var(--tertiary);
+    color: var(--primary);
 }
 
 /* navbar */
@@ -65,9 +69,11 @@ body {
 }
 
 #cursor {
-    color: springgreen;
+    color: var(--tertiary);
+}
 
-    animation: blink .8s linear infinite;
+.blink {
+    animation: blink 1s linear infinite;
 }
 
 @keyframes blink {
@@ -79,7 +85,7 @@ body {
 /* .feature {
     margin-left: 2em;
 
-    background-color: springgreen;
+    background-color: var(--tertiary);
     border-radius: 50%;
     width: 7.5em;
     height: 7.5em;
