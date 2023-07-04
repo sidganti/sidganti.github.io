@@ -1,13 +1,131 @@
+:root {
+    --primary: #111111;
+    --secondary: white;
+    --tertiary: springgreen;
+}
+
 body {
     /* bg color */
-    height: 100vh;
-    background-color: #111111;
+    background-color: var(--primary);
 
     /* fonts */
     font-family: Verdana, sans-serif;
-    color: white;
+    color: var(--secondary);
 }
 
+::selection {
+    background: var(--tertiary);
+    color: var(--primary);
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.button {
+    vertical-align: middle;
+}
+
+.button:hover {
+    background: var(--tertiary);
+    color: var(--primary);
+}
+
+/* navbar */
+
+#nav ul {
+    list-style-type: none;
+}
+
+#nav li {
+    float: right;
+    padding: 1em;
+}
+
+/* hero */
+
 #hero {
+    /* position */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    text-align: center;
+    line-height: .5em;
+}
+
+#hero p {
     font-size: 3.5em;
+}
+
+#hero small {
+    font-size: 1em;
+}
+
+#cursor {
+    color: var(--tertiary);
+}
+
+.blink {
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* .feature {
+    margin-left: 2em;
+
+    background-color: var(--tertiary);
+    border-radius: 50%;
+    width: 7.5em;
+    height: 7.5em;
+
+    cursor: pointer;
+
+    color: #111111;
+
+    hover animation
+    transition: transform 0.2s;
+}
+
+.feature:hover {
+    transform: scale(1.5);
+}
+
+.feature:active {
+    transform: scale(2);
+} */
+
+/* footer */
+
+#footer {
+    /* postion */
+    position: fixed;
+    width: 100%;
+    bottom: 1em;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#footer small {
+    margin: 0.5em;
+}
+
+.icon {
+    vertical-align: middle;
+    width: 1.5em;
+    height: 1.5em;
 }
