@@ -1,4 +1,4 @@
-$(document).ready(() => {
+let home = () => {
     // hide other elements
     $('body > :not(#hero)').hide();
     $('#hero small').hide();
@@ -22,4 +22,25 @@ $(document).ready(() => {
         }
     }
     typewriter();
+}
+
+let about = () => {
+    // hide other elements
+    $('body > :not(#hero)').hide();
+    $('#hero').hide();
+
+
+    $('body > :not(#hero)').slideDown('slow');
+    $('#hero').slideDown('slow');
+}
+
+$(document).ready(() => {
+    page = $('body').attr('id')
+
+    switch (page) {
+        case 'home':
+            home();
+        case 'about':
+            about();
+    }
 });
