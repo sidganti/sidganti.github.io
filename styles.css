@@ -36,6 +36,13 @@ hr {
     color: var(--primary);
 }
 
+.resume {
+    background: var(--tertiary);
+    color: var(--primary);
+
+    vertical-align: middle;
+}
+
 /* navbar */
 
 #nav ul {
