@@ -99,30 +99,6 @@ img {
     margin-right: auto;
 }
 
-/* .feature {
-    margin-left: 2em;
-
-    background-color: var(--tertiary);
-    border-radius: 50%;
-    width: 7.5em;
-    height: 7.5em;
-
-    cursor: pointer;
-
-    color: #111111;
-
-    hover animation
-    transition: transform 0.2s;
-}
-
-.feature:hover {
-    transform: scale(1.5);
-}
-
-.feature:active {
-    transform: scale(2);
-} */
-
 /* footer */
 
 #footer {
