@@ -24,7 +24,7 @@ let home = () => {
     typewriter();
 }
 
-let about = () => {
+let other = () => {
     // hide other elements
     $('body > :not(#hero)').hide();
     $('#hero').hide();
@@ -40,7 +40,13 @@ $(document).ready(() => {
     switch (page) {
         case 'home':
             home();
+        case 'projects':
+            // temporary
+        case 'resume':
+            // temporary
         case 'about':
-            about();
+        case 'four-o-four':
+        default:
+            other();
     }
 });
