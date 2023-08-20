@@ -17,4 +17,4 @@ Thank you for taking the time to view my site!
 
 ## Suggestions
 
-If you have any suggestions or bugs to report you can email me at [gantisid@gmail.com](gantisid@gmail.com "gantisid@gmail.com")
+If you have any suggestions or bugs to report you can open an issue on github.

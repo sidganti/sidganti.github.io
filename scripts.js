@@ -5,7 +5,7 @@ let home = () => {
     $('#hero').appendTo('body');
 
     let i = 0;
-    let text = 'SidGanti ;';
+    let text = 'Sid Ganti ;';
     let typewriter = () => {
         if (i < text.length) {
             $('#heading').append(text.charAt(i));
