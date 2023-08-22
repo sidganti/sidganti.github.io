@@ -42,8 +42,6 @@ $(document).ready(() => {
             home();
         case 'projects':
             // temporary
-        case 'resume':
-            // temporary
         case 'about':
         case 'four-o-four':
         default:
