@@ -101,7 +101,7 @@ img {
 
 /* footer */
 
-#footer {
+footer {
     /* postion */
     position: fixed;
     width: 100%;
@@ -113,7 +113,7 @@ img {
     text-align: center;
 }
 
-#footer small {
+footer small {
     margin: 0.5em;
 }
 
